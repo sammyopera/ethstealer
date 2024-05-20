@@ -1,0 +1,59 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(241, 241, 237);
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 780px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgb(236, 243, 241);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  width: 150px; /* Adjust according to your logo size */
+  height: auto;
+  border-radius: 15px; /* Rounded corners */
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+.enter_lair {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#connectButton,
+#claimButton {
+  width: 200px;
+  height: 50px;
+  background-color: #4b8bc7;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#connectButton {
+  order: -1;
+}
+
+.notEli {
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-left: 18px;
+    margin-right: 18px;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+  }
+}
