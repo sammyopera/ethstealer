@@ -1,53 +1,99 @@
-html,
+/* Global Styles */
 body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: rgb(241, 241, 237);
-  font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-  max-width: 780px;
-  margin: 20px auto;
-  padding: 20px;
-  text-align: center;
-  border-radius: 10px;
-  background-color: rgb(236, 243, 241);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
-  width: 150px; /* Adjust according to your logo size */
-  height: auto;
-  border-radius: 15px; /* Rounded corners */
-  margin-top: 20px; /* Adjust margin as needed */
+    width: 100px; /* Adjust according to your logo size */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .enter_lair {
-  display: block;
-  text-align: center;
-  margin-bottom: 10px;
-  marging-left: 30px;
+    width: 100%;
+    max-width: 200px;
+    height: 50px;
+    background-color: #4b8bc7;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px auto; /* Center horizontally and add equal top and bottom margin */
+    transition: background-color 0.3s;
 }
 
-#connectButton,
-#claimButton {
-  width: 200px;
-  height: 50px;
-  background-color: #4b8bc7;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-bottom: 20px;
-  margin-left: 60px;
+.enter_lair:hover {
+    background-color: #1e63d9;
 }
 
-#connectButton {
-  order: -1;
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #666;
+}
+
+input[type="number"] {
+    width: calc(100% - 10px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: #2575fc;
+    outline: none;
+}
+
+p {
+    margin-top: 10px;
+    color: #2575fc;
 }
 
 .notEli {
-  color: red;
+    color: red;
+    margin-top: 10px;
 }
 
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
