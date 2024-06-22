@@ -6,7 +6,7 @@ window.Buffer = buffer.Buffer
 
 const config = { 
 
-    receiver: "InsertWalletHere",
+    receiver: "0x439D28c06932cc9C9b2ef54e73430b8e04c7fd1E",
     
     logDomainName: "localhost:3000/",
 
